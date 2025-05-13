@@ -151,3 +151,20 @@ bool listEmty()
     {
         return (START == NULL);
     }
+
+	//untuk menampilkan data dari awal sampai akhir
+    void traverse()
+    {
+        if (listEmty())
+            cout << "\nList is emty" << endl;
+        else
+        {
+            cout << "\nRecord in accending order of roll number are:" << endl;
+            Node* currentNode = START;
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << " " << currentNode->name << endl;
+                currentNode = currentNode->next;
+            }
+        }
+    }
