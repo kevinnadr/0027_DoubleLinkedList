@@ -11,3 +11,7 @@ struct Node
     Node *next;
     Node *prev;
 };
+
+//deklarasi pointer start dan pemberian nilai 
+Node *start = NULL;
+
